@@ -9,6 +9,6 @@ fn shadowing() {
 
 }
 
-fn main() {
-    shadowing();
+fn main() { //quando declaro uma função, preciso especificar fn na frente do nome da função.
+    shadowing(); //quando chamo uma função, uso apenas o nome da função.
 }
