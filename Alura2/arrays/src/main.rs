@@ -1,6 +1,9 @@
 fn main() {
     
     let notas: [f32; 4] = [6.5; 4]; //array
+    let inteiro: usize = 0;
+
+    println!("{}", notas[inteiro]);
 
     for indice in 0..notas.len() {
         println!("A nota {} é = {}", indice + 1, notas[indice]);
