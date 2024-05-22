@@ -17,6 +17,11 @@ fn conteudo_opcional(){
     }
 }
 
+enum Option <T>{ //eu estou criando um templante para que meu compilador crie enums
+    Some(T),
+    None
+}
+
 fn ler_arquivo(caminho_arquivo: String) -> Option<String> {
     Some(String::from("Algum Conteúdo"))
     //None
