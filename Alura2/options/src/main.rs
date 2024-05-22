@@ -11,6 +11,10 @@ fn conteudo_opcional(){
     };
 
     println!("{:?}", conteudo_arquivo); //lembrar do borrow &
+
+    if let Some(valor) = conteudo_arquivo {
+        println!("Agora, tenho certeza de que há um valor {}", valor);
+    }
 }
 
 fn ler_arquivo(caminho_arquivo: String) -> Option<String> {
