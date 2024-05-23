@@ -17,4 +17,20 @@ fn vectors(){
         Some(n) => *n, //uso o * para desreferenciar o valor
         None => 0.0
     });
+
+    if let Some(nota) = notas.pop(){
+        println!("Ultimo valor = {}", nota);
+        println!("{:?}", notas);
+    }
+
+    /* 
+    while let Some(nota) = notas.pop(){
+        println!("Valor removido = {}", nota);
+    }*/
+
+    for nota in &notas { //detalhe do borrow
+        println!("Nota = {}", nota);
+    }
+    println!("{:?}", notas);
+
 }
