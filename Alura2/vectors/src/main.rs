@@ -3,12 +3,16 @@ fn main() {
 }
 
 fn vectors(){
-    let mut notas:Vec<f32> = vec![10.0, 8.0, 6.5]; 
+    let mut notas:Vec<f32> = Vec::with_capacity(4);
+    notas.push(10.0);
+    notas.push(8.0);
+    notas.push(6.5);
+    println!("Capacidade = {}", notas.capacity());
 
     println!("{:?}", notas);
 
     notas.push(7.5);
-
+    println!("Capacidade = {}", notas.capacity());
     println!("{:?}", notas);
 
     println!("Nota 1 = {}", notas[0]);
