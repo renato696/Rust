@@ -10,4 +10,11 @@ fn vectors(){
     notas.push(7.5);
 
     println!("{:?}", notas);
+
+    println!("Nota 1 = {}", notas[0]);
+
+    println!("Nota 6 = {}", match notas.get(7){
+        Some(n) => *n, //uso o * para desreferenciar o valor
+        None => 0.0
+    });
 }
