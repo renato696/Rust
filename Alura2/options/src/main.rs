@@ -3,7 +3,7 @@ fn main() {
 }
 
 fn conteudo_opcional(){
-    let conteudo_arquivo = ler_arquivo(String::from(""));
+    let conteudo_arquivo= ler_arquivo(String::from(""));
         
     match &conteudo_arquivo { //lembrar do borrow &
         Some(valor) => println!("{}", valor),
