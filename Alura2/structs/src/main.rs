@@ -7,6 +7,10 @@ struct Conta {
     saldo: f64
 }
 
+impl Conta {
+    
+}
+
 struct Titular {
     nome: String,
     sobrenome: String,
