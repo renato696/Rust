@@ -1,0 +1,1 @@
+Pasta contendo estudo do Livro "Rust Programming Language"
